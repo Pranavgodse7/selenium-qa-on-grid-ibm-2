@@ -15,7 +15,7 @@ stage('Publish Report') {
 	steps { publishHTML([reportDir: 'target/surefire-reports',
 	reportFiles: 'index.html',
 	reportName: 'Test Report',
-	keppAll:true,
+	keepAll:true,
 	alwaysLinkToLastBuild:true,
 	allowMissing:false
 	]) }
